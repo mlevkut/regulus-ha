@@ -18,6 +18,11 @@ REGISTRY_MAPPER = {
   "holiday": "__R4113.1_BOOL_i",
   "heatPumpOutletTemperature": "__R9258_INT_-4.1d",
   "heatPumpInletTemperature": "__R9256_INT_-4.1d",
+  # status bits, confirmed by 12 h of monitoring against HP start/stop and
+  # AKU/water heating cycles; heatPumpRunningStatus stays on during defrost
+  "heatPumpRunningStatus": "__R9260.0_BOOL_i",
+  "akuRunningStatusFromHeatPump": "__R135682.0_BOOL_i",
+  "waterRunningStatusFromHeatPump": "__R11316.6_BOOL_i",
   "circulationRunningStatus": "__R29179.0_BOOL_i",
   "zone1RequiredTemperature": "__R4300_REAL_.1f",
   "zone1HeatingWaterTemperature": "__R4170_REAL_.1f",
